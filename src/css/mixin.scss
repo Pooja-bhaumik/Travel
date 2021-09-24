@@ -1,0 +1,31 @@
+@import "./variable.scss";
+@mixin commmon-head {
+  color: $primary;
+  font-weight: 900;
+  font-size: 3rem;
+}
+@mixin common-text {
+  color: $text;
+  padding: 3rem 31px 3rem 0;
+  font-size: 17px;
+  letter-spacing: 0.8px;
+  line-height: 2;
+  font-weight: 500;
+}
+@mixin common_rounded_card {
+  height: 35px;
+  width: 35px;
+  margin-right: 11px;
+  border-radius: 50px;
+  background: rgba(0, 0, 0, 0.9);
+}
+@mixin common_s_text {
+  font-size: 14px;
+  padding: 1rem 0px;
+  margin-bottom: 0px;
+  font-weight: 400;
+}
+@mixin headings {
+  font-size: 3rem;
+  color: #363673;
+}

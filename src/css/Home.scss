@@ -1,0 +1,201 @@
+@import "./mixin.scss";
+@import "./variable.scss";
+
+.home_section {
+  padding-top: 7rem;
+  background: #1050c50a;
+}
+.common_head {
+  @include commmon-head;
+  span {
+    color: $secondary !important;
+  }
+}
+.common-text {
+  @include common-text;
+}
+.h-common-btn {
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.sign {
+  background: rgb(100, 21, 255);
+  color: #fff;
+  padding: 0.8rem 3rem;
+  &:hover {
+    color: #fff;
+    background: #2a0573;
+  }
+}
+
+.search {
+  background: #585a5f1a;
+  padding: 0.8rem 2rem;
+  margin-left: 1rem;
+  &:hover {
+    background: #5b70d41f;
+  }
+}
+
+/*quality section*/
+.quality_section {
+  padding: 8rem 0rem;
+  .q-icon {
+    height: 55px;
+    width: 58px;
+    margin: auto;
+    background: #3f6dc10f;
+    border-radius: 50px;
+  }
+  .q_item {
+    cursor: pointer;
+    transition: 0.3s linear;
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+  .quality-sub-title {
+    font-size: 1.3rem;
+    padding-top: 16px;
+  }
+
+  .common_s_text {
+    @include common_s_text;
+  }
+  .q-learn {
+    a {
+      color: #6415ff;
+      font-size: 0.9rem;
+      text-decoration: none;
+    }
+    i {
+      color: #6415ff4d;
+    }
+  }
+}
+//Popular section
+.popular_section {
+  h1 {
+    @include headings;
+    padding-bottom: 4rem;
+  }
+  .card {
+    border-radius: 27px 0px 41px 0px;
+  }
+  img {
+    border-radius: 26px 0px 0 0px;
+  }
+  .card-top {
+    padding: 1.2rem 0px;
+    h5 {
+      font-size: 1.5rem;
+
+      color: rgba(0, 0, 0, 0.9);
+    }
+    svg {
+      color: #d0d077;
+      margin-right: 10px;
+    }
+    span {
+      vertical-align: middle;
+      font-weight: bold;
+      color: rgba(0, 0, 0, 0.9);
+    }
+  }
+  .card-place {
+    .icon {
+      @include common_rounded_card;
+    }
+    svg {
+      width: 16px;
+      color: #fff;
+    }
+  }
+  .card-price {
+    .price {
+      @include common_rounded_card;
+    }
+    svg {
+      width: 16px;
+      color: #fff;
+    }
+  }
+  .card-text {
+    @include common_s_text;
+    padding: 2rem 0px;
+  }
+  .bottom-card_button {
+    padding: 2rem 2rem;
+    border-radius: 0px 0px 43px;
+    background: #6415ff;
+  }
+  .bottom-card_button button {
+    font-weight: bold;
+    font-size: 18px;
+  }
+}
+//trending section
+.trending_section {
+  padding: 7rem 0rem;
+  .trending_head {
+    @include headings;
+  }
+  .trending_text {
+    @include common-text;
+    padding: 1rem 31px 0rem 0;
+  }
+  .trend_place {
+    font-size: 1.2rem;
+    color: #6415ff;
+  }
+  .rupees {
+    margin-right: 5px;
+    font-size: 1.3rem;
+  }
+  .day {
+    font-weight: 500;
+  }
+  .trend-text {
+    font-size: 19px;
+    font-weight: 500;
+  }
+  .trend-btn {
+    background: #6415ff;
+  }
+}
+/* media query */
+@media only screen and (max-width: 768px) {
+  .common-text {
+    padding: 2rem 0 0 0px;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .search,
+  .sign {
+    margin-left: 0px;
+    display: block;
+    width: 100%;
+  }
+  .common-text {
+    padding: 1rem 0 1rem 0px;
+    font-size: 15px;
+  }
+  .common_head {
+    font-size: 2rem;
+  }
+  //popular section
+  .card-row {
+    padding: 0px;
+  }
+  .card {
+    border: 0px;
+  }
+  .popular_section img {
+    border-radius: 0px;
+  }
+  .popular_section .bottom-card_button {
+    border-radius: 0px;
+    padding: 0px;
+  }
+}
