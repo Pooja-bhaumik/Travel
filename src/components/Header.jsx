@@ -49,24 +49,36 @@ const header = () => {
                     <NavLink
                       className="nav-link mx-4"
                       activeClassName="active-class"
-                      aria-current="page"
-                      to="/"
+                      to="/home"
                     >
                       Home
                     </NavLink>
                   </li>
+
                   <li className="nav-item">
-                    <NavLink className="nav-link mx-4" to="/about">
+                    <NavLink
+                      className="nav-link mx-4"
+                      activeClassName="active-class"
+                      to="/about"
+                    >
                       About
                     </NavLink>
                   </li>
                   <li className="nav-item">
-                    <NavLink className="nav-link mx-4" to="/blog">
+                    <NavLink
+                      className="nav-link mx-4"
+                      activeClassName="active-class"
+                      to="/blog"
+                    >
                       Blog
                     </NavLink>
                   </li>
                   <li className="nav-item">
-                    <NavLink className="nav-link mx-4" to="/login">
+                    <NavLink
+                      className="nav-link mx-4"
+                      activeClassName="active-class"
+                      to="/login"
+                    >
                       Login
                     </NavLink>
                   </li>

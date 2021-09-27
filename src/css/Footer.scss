@@ -1,0 +1,31 @@
+.footer_sec {
+  background: #0d0d10;
+  .footer_brand {
+    img {
+      height: 30px;
+    }
+    .f_b_text {
+      font-size: 1.5rem;
+      vertical-align: middle;
+      color: white;
+      font-weight: bold;
+    }
+  }
+  .footer_menu a,
+  .footer_icons a {
+    margin: 0px 1rem;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+  }
+  .footer_icons svg {
+    height: 1.5rem;
+    width: 1.5rem;
+    color: #fff;
+  }
+  .footer_copy {
+    font-weight: 500;
+    font-size: 14px;
+    color: #828594;
+  }
+}

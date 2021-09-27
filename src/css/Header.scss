@@ -14,4 +14,12 @@
   font-weight: 600;
   font-size: 14px;
   color: #1c1c4e;
+  border: 2px solid transparent;
+}
+.active-class {
+  color: #6415ff !important;
+
+  &:hover {
+    border-bottom: 2px solid #6415ff;
+  }
 }

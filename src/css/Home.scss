@@ -163,7 +163,52 @@
   .trend-btn {
     background: #6415ff;
   }
+  .view_more {
+    font-weight: 600;
+    font-size: 1.1rem;
+    color: #6415ff;
+    text-decoration: none;
+  }
 }
+
+//news letter
+.news-letter {
+  background-color: #1c2840;
+}
+.n-text h1 {
+  color: #fff;
+  font-weight: 900;
+  font-size: 3rem;
+  letter-spacing: 1px;
+  margin: 1px;
+}
+.n-text p {
+  color: #b7b5b5d1;
+  font-weight: 500;
+  font-size: 14px;
+  word-spacing: 4px;
+}
+form {
+  input {
+    padding: 0.7rem 0.9rem;
+    background: #2a3b5d99;
+    border: none;
+  }
+  input::placeholder {
+    color: grey;
+    font-weight: bold;
+    font-size: 15px;
+  }
+  .btn {
+    padding: 0.7rem 0.9rem;
+    border: none;
+    background: #429a42b8;
+    margin-bottom: 4px;
+    font-size: 15px;
+    border-radius: 0px 5px 5px 0px;
+  }
+}
+
 /* media query */
 @media only screen and (max-width: 768px) {
   .common-text {
@@ -197,5 +242,11 @@
   .popular_section .bottom-card_button {
     border-radius: 0px;
     padding: 0px;
+  }
+  .trending_text {
+    padding: 0px 0px 2rem 0px !important;
+  }
+  .n-text h1 {
+    font-size: 2rem;
   }
 }

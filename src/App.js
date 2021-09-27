@@ -7,6 +7,7 @@ import Home from "./components/Home";
 import About from "./components/About";
 import Blog from "./components/Blog";
 import Login from "./components/Login";
+import Footer from "./components/Footer.jsx";
 
 const App = () => {
   return (
@@ -15,10 +16,12 @@ const App = () => {
         <Header />
         <Switch>
           <Route path="/" exact component={Home} />
-          <Route path="/about" component={About} />
-          <Route path="/blog" component={Blog} />
-          <Route psath="/login" component={Login} />
+          <Route path="/home" exact component={Home} />
+          <Route path="/about" exact component={About} />
+          <Route path="/blog" exact component={Blog} />
+          <Route path="/login" exact component={Login} />
         </Switch>
+        <Footer />
       </Router>
     </>
   );
