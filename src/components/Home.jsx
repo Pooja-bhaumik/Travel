@@ -173,7 +173,7 @@ const home = () => {
               </div>
             </div>
             <div className="col-12 col-sm-10  mx-auto  col-lg-6 centermid">
-              <form>
+              <form className="sub_form">
                 <input
                   type="text"
                   placeholder="Your Email Address"

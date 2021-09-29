@@ -6,7 +6,7 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Home from "./components/Home";
 import About from "./components/About";
 import Blog from "./components/Blog";
-import Login from "./components/Login";
+import SignForm from "./components/Sign-up.jsx";
 import Footer from "./components/Footer.jsx";
 
 const App = () => {
@@ -19,7 +19,7 @@ const App = () => {
           <Route path="/home" exact component={Home} />
           <Route path="/about" exact component={About} />
           <Route path="/blog" exact component={Blog} />
-          <Route path="/login" exact component={Login} />
+          <Route path="/sign" exact component={SignForm} />
         </Switch>
         <Footer />
       </Router>

@@ -79,7 +79,7 @@ const header = () => {
                       activeClassName="active-class"
                       to="/login"
                     >
-                      Login
+                      Sign Up
                     </NavLink>
                   </li>
                 </ul>

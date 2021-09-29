@@ -1,0 +1,65 @@
+@import "./mixin.scss";
+@import "./variable.scss";
+.about_sec {
+  padding-bottom: 7rem;
+}
+.about-head {
+  font-size: 3rem;
+  color: #363673;
+  padding: 7rem 0px 5rem 0px;
+}
+.about-sub {
+  font-size: 3.4rem;
+  color: #0c0c63;
+}
+.about-text {
+  @include common-text;
+  padding: 1rem 4px 3rem 0;
+  line-height: unset;
+}
+.about_b_left {
+  margin-right: 5rem;
+}
+.about_common_num {
+  color: rgb(100, 21, 255);
+  font-weight: bold;
+}
+.about_common_text {
+  font-weight: 400;
+  color: rgb(40, 40, 53);
+}
+@media only screen and (max-width: 894px) {
+  .about-sub {
+    font-size: 2rem;
+  }
+  .about-text {
+    padding: 1rem 4px 1rem 0;
+  }
+}
+// @media only screen and (max-width: 774px) {
+//   .about-img {
+//     object-fit: cover;
+//   }
+// }
+
+@media only screen and (max-width: 768px) {
+  .about-text {
+    padding: 1rem 0px 1rem 0;
+  }
+  .about-sub {
+    font-size: 2rem;
+  }
+  .about-img {
+    width: 100%;
+    height: 478px;
+    object-fit: cover;
+  }
+  .about_bottom {
+    justify-content: center;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .about-img {
+    max-height: 250px;
+  }
+}
