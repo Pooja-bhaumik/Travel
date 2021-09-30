@@ -9,7 +9,7 @@ const about = () => {
           <h2 className="text-center about-head fw-bold">About Us</h2>
           <div className="row px-3 ">
             <div className="col-10 mx-auto col-md-5 pb-5 pb-md-0">
-              <img src={a1} className="img-fluid rounded"></img>
+              <img src={a1} className="img-fluid rounded about-img"></img>
             </div>
             <div className="col-10 col-md-5 mx-auto py-0 py-md-1 py-lg-5 text-center text-md-start">
               <h2 className="about-sub fw-bold">We have the best service.</h2>

@@ -77,7 +77,7 @@ const header = () => {
                     <NavLink
                       className="nav-link mx-4"
                       activeClassName="active-class"
-                      to="/login"
+                      to="/sign"
                     >
                       Sign Up
                     </NavLink>
